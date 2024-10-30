@@ -3,10 +3,21 @@ print()
 print("input number 1 - 50")
 print()
 
-try:
-    var1 = int(input("Please input number here "))
-except:
-    print("Error try again")    
+while True:
+    try:
+        var1 = int(input("Please input number  "))
+        break
+    except:
+        print("Error try again")    
 # Ask the user to input again until the user input is invalid.
-# When the user input is invalid,
-# display how many inputted numbers are in the following range:
+var2 = (input("Add another number? "))
+if var2 == 'yes' or var2 == 'Yes' or var2 == 'Y' or var2 == 'y':
+
+    while True:
+        try:
+            var3 = int(input("Please input number "))
+            break
+        except:
+            print("Error try again")
+
+# When the user input is invalid, display how many inputted numbers are in the following range:
