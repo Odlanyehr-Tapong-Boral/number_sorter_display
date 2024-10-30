@@ -10,13 +10,15 @@ while True:
     except:
         print("Error try again")    
 # Ask the user to input again until the user input is invalid.
-var2 = (input("Add another number? "))
-if var2 == 'yes' or var2 == 'Yes' or var2 == 'Y' or var2 == 'y':
+while True:
+   var2 = (input("Add another number? "))
+   if var2 == 'yes' or var2 == 'Yes' or var2 == 'Y' or var2 == 'y':
+       
 
-    while True:
+    
         try:
             var3 = int(input("Please input number "))
-            break
+            
         except:
             print("Error try again")
 
